@@ -89,7 +89,3 @@ tests/
   liverpool-bonus.spec.ts
   *-snapshots/   baselines visuales por browser
 ```
-
-## Entrega
-
-Enviar link del repo a **s_fuentesrj@hitss.com** (ver [`TEST_STRATEGY.md`](TEST_STRATEGY.md)).
