@@ -1,0 +1,25 @@
+{
+  "name": "liverpool-e2e-challenge",
+  "version": "1.0.0",
+  "description": "Liverpool e-commerce E2E automation take-home challenge",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "cross-env HEADED=1 playwright test",
+    "test:chromium": "cross-env HEADED=1 playwright test --project=chromium",
+    "test:update-snapshots": "cross-env HEADED=1 playwright test tests/liverpool-bonus.spec.ts --grep \"visual regression\" --update-snapshots",
+    "test:update-snapshots:all": "cross-env HEADED=1 playwright test tests/liverpool-bonus.spec.ts --grep \"visual regression\" --update-snapshots --project=chromium --project=firefox --project=webkit",
+    "test:report": "playwright show-report",
+    "test:debug": "cross-env HEADED=1 playwright test --debug"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.1",
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^22.10.5",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.7.3"
+  }
+}
